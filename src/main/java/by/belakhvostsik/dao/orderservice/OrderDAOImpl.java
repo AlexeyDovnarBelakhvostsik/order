@@ -51,7 +51,7 @@ public class OrderDAOImpl implements OrderDAO {
 
     private final OrderMapper orderMapper = new OrderMapperImpl();
 
-    private final OrderDetailMapper orderDetailMapper = new OrderDetailMapperImpl(); ;
+    private final OrderDetailMapper orderDetailMapper = new OrderDetailMapperImpl();
 
     private static final Logger logger = Logger.getLogger(OrderDAOImpl.class.getName());
 

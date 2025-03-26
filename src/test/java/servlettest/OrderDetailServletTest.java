@@ -37,7 +37,7 @@ class OrderDetailServletTest {
     private TestableOrderDetailServlet servlet;
 
     private StringWriter responseWriter;
-    private ObjectMapper mapper = new ObjectMapper();
+    private final ObjectMapper mapper = new ObjectMapper();
 
     // Вспомогательный класс для доступа к protected методам
     private static class TestableOrderDetailServlet extends OrderDetailServlet {
@@ -133,7 +133,7 @@ class OrderDetailServletTest {
     }
 
     @Test
-    void shouldDeleteDetail() throws Exception {
+    void shouldDeleteDetail() {
         Long detailId = 7L;
         when(request.getPathInfo()).thenReturn("/7");
 
